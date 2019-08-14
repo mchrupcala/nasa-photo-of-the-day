@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios';
+import CreateCard from './CreateCard';
+import { tsPropertySignature } from "@babel/types";
 
 function App() {
 
@@ -25,12 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
       <img src={apodData.url} />
-      <p>{apodData.explanation}</p>
+      <CreateCard title={apodData.title} image={apodData.url} description={apodData.explanation}/>
     </div>
   );
 }

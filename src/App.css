@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+.infoCard {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin: 5% 7%;
+}
+
+.thumbnail {
+  width: 25%;
+}
+
+.thumbnail img {
+  width: 200px;
+  height: auto;
+}
+
+.infoCard p {
+  margin: auto 5%;
+}
