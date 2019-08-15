@@ -4,6 +4,7 @@ import axios from 'axios';
 import CreateCard from './CreateCard';
 import DatePicker from './DatePicker';
 import { tsPropertySignature } from "@babel/types";
+import {Image} from "semantic-ui-react";
 
 function App() {
 
@@ -28,9 +29,10 @@ function App() {
   return (
     <div className="App">
 
-      <DatePicker />
-
-      <img src={apodData.url} />
+      {/* <DatePicker /> */}
+{/* 
+      <img src={apodData.url} /> */}
+      <Image src={apodData.url} size='medium' bordered />
       <CreateCard title={apodData.title} image={apodData.url} description={apodData.explanation}/>
     </div>
   );
