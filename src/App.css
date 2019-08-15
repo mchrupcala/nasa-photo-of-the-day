@@ -53,20 +53,30 @@
   height: 70px;
 }
 
-/* .logo {
-  height: 50px;
-  width: 50px;
-} */
+.navDiv {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 70px;
+  width: 90px;
+  padding-left: 5px;
+}
 
 .infoCard {
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
   margin: 5% 7%;
+  align-items: center;
 }
 
 .thumbnail {
   width: 25%;
+  margin: 0 auto;
+  padding-left: 10px;
 }
 
 .thumbnail img {
@@ -76,4 +86,33 @@
 
 .infoCard p {
   margin: auto 5%;
+}
+
+.ui.header:first-child {
+  margin-top: 45px !important;
+}
+
+.comments {
+  width: 100%;
+  max-width: 100% !important;
+  margin-bottom: 30px !important;
+}
+
+.comment {
+  border: 1px solid black !important;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 !important;
+}
+
+.ui.comments .comment .avatar {
+  width: 15% !important;
+  height: auto !important;
+  margin: auto 10px !important;
+}
+
+.content {
+  width: 85%;
 }
